@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/logo.png">
+    <Title>Day4 Tabel </Title>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    <!-- Required css-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body background="img/win.jpg">
+    <h2>Table Anggota Inti</h2>
+    <p>search the table for first names, last names</p>
+    <input id="myInput" type="text" placeholder="Cari....">
+    <br><br>
+
+    <table align="center">
+        <thead>
+            <tr>
+                <td><b>No</b></td>
+                <td><b>Name</b></td>
+                <td><b>Last Name</b></td>
+                <td><b>Tanggal Lahir</b></td>
+                <td><b>Tipe Class</b></td>
+                <td><b>Jenis Kelamin</b></td>
+                <td><b>Alamat</b></td>
+                <td><b>Kewernagaraan</b></td>
+                <td><b>Keterangan</b></td>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            <tr-1>
+                <td>1</td>
+                <td>Andre</td>
+                <td>Maulana Ibrahim</td>
+                <td>07/04/1999</td>
+                <td>A</td>
+                <td>Laki-Laki</td>
+                <td>Jalan H Mursid RT04/RW04 No:36H</td>
+                <td>Jepang</td>
+                <td>Admin 1</td>
+            </tr-1>
+            <tr>
+                <td>2</td>
+                <td>Rizky</td>
+                <td>Adnan</td>
+                <td>08/10/1999</td>
+                <td>C</td>
+                <td>Laki-Laki</td>
+                <td>Jalan Kukusan RT03/RW04 No:2A</td>
+                <td>Indonesia</td>
+                <td>Admin 2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Abe</td>
+                <td>Tanu</td>
+                <td>30/07/1999</td>
+                <td>B</td>
+                <td>Laki-Laki</td>
+                <td>Jalan Kukusan RT05/RT05 No:44A</td>
+                <td>Indonesia</td>
+                <td>Admin 3</td>
+            </tr>
+            <tr>
+            <td>4</td>
+                <td>Oka</td>
+                <td>Dwi Pratama</td>
+                <td>27/10/1999</td>
+                <td>B</td>
+                <td>Laki-Laki</td>
+                <td>Jalan Kebagusan Dalam RT12/RW11 No:55F</td>
+                <td>Amsterdam</td>
+                <td>Bendahara 1</td>
+            </tr>
+            <tr>
+            <td>5</td>
+                <td>Rosad</td>
+                <td>Fadilah</td>
+                <td>12/12/1999</td>
+                <td>A</td>
+                <td>Laki-Laki</td>
+                <td>Jalan H Danyong RT08/RT05 No:45A</td>
+                <td>Zimbabuwe</td>
+                <td>Bendahara 2</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Fauzan</td>
+                <td>Nur Fadilah</td>
+                <td>15/06/2000</td>
+                <td>A</td>
+                <td>Laki-Laki</td>
+                <td>Jalan Cinere Raya RT05/RW03 No:12H</td>
+                <td>Amerika Serikat</td>
+                <td>Seketaris 1</td>
+            </tr>
+            <tr>
+            <td>7</td>
+                <td>Claudia</td>
+                <td>Enfileds</td>
+                <td>20/09/1999</td>
+                <td>B</td>
+                <td>Perempuan</td>
+                <td>Jalan Bintaro Sektor 5 RT05/RW05 No:25A</td>
+                <td>Inggris</td>
+                <td>Seketaris 2</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                    <td>Amelia</td>
+                    <td>Rizky</td>
+                    <td>23/08/1999</td>
+                    <td>B</td>
+                    <td>Perempuan</td>
+                    <td>Jalan Cempaka Putih RT10/RW07 No:45B</td>
+                    <td>Indonesia</td>
+                    <td>Tim Website</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Putri</td>
+                    <td>Ayu</td>
+                    <td>01/02/2000</td>
+                    <td>C</td>
+                    <td>Perempuan</td>
+                    <td>Jalan Kavling Polri No:5 RT10/RW09</td>
+                    <td>Indonesia</td>
+                    <td>Tim Facebook</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Nadia</td>
+                    <td>Rahda</td>
+                    <td>07/05/1999</td>
+                    <td>A</td>
+                    <td>Perempuan</td>
+                    <td>Jalan Pondok Indah Raya RT07/RW04 No:99A</td>
+                    <td>Singapura</td>
+                    <td>Tim Pendaftaran</td>
+                </tr>
+        </tbody>
+    </table>
+    <a href="index.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+</body>
+
+</html>
